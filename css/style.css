@@ -130,13 +130,11 @@ blockquote:after {
   box-shadow: 0 3px 20px -5px rgba(0,0,0,0.95);
 }
 
-
-
 /* CSS-only Parallax */
 
 .css-only-parallax {
   width: 100%;
-  height: 10em;
+  height: 9em;
   overflow: hidden;
   border-radius: 4px;
   -webkit-perspective: 200;
@@ -180,8 +178,6 @@ blockquote:after {
   -ms-transform: translateZ(-5em);
   -o-transform: translateZ(-5em);
   transform: translateZ(-5em);
-  bottom: 3em;
-  left: 14em;
 }
 .item.two {
   border-radius: 3px;
@@ -190,8 +186,6 @@ blockquote:after {
   -ms-transform: translateZ(-2em);
   -o-transform: translateZ(-2em);
   transform: translateZ(-2em);
-  bottom: 3em;
-  right: 1em;
 }
 .item.three {
   -webkit-transform: translateZ(-10em);
@@ -199,6 +193,4 @@ blockquote:after {
   -ms-transform: translateZ(-10em);
   -o-transform: translateZ(-10em);
   transform: translateZ(-10em);
-  bottom: 3em;
-  left: 10em;
 }

@@ -7,10 +7,12 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
   <link rel='stylesheet' href='css/style.css'>
   <script language='javascript' type='text/javascript' src='js/jquery.js'></script>
+  <script language='javascript' type='text/javascript' src='js/script.js'></script>
 </head>
 <body>
+
   <header>
-    <p>Scroll to Demo</p>
+    <p>Scroll</p>
     <span>&#x25BE;</span>
   </header>
 
@@ -30,23 +32,19 @@
 
   <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus facilisis, ante at ultricies interdum, sapien lectus laoreet arcu, ut placerat nibh diam eu metus. Vivamus rutrum facilisis enim, ac pretium odio ultricies vitae. Sed vitae ultrices dui.</p>
 
- <blockquote class='shadow' data-shadow='text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id arcu est, nec tempus turpis.</blockquote>
+  <blockquote class='shadow' data-shadow='text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id arcu est, nec tempus turpis.</blockquote>
 
   <p>Sed pellentesque adipiscing tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros augue, pharetra ac suscipit et, mattis ut nisi. Ut id convallis lorem. In pharetra tempus ligula sit amet rutrum. Suspendisse facilisis est vel augue sagittis a lacinia nibh posuere.</p>
 
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id arcu est, nec tempus turpis. Curabitur pulvinar luctus enim a molestie. Integer aliquam tincidunt adipiscing.</p>
 
-  <h2 class='shadow' data-shadow='text'>META.01 Dev Ed.</h2>
-
-  <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus facilisis, ante at ultricies interdum, sapien lectus laoreet arcu, ut placerat nibh diam eu metus. Vivamus rutrum facilisis enim, ac pretium odio ultricies vitae. Sed vitae ultrices dui.</p>
+  <h2 class='shadow' data-shadow='text'>A CSS-only Parallax effect:</h2>
 
   <div class='css-only-parallax'>
-
-  <span class='item one shadow' data-shadow='box'></span>
-  <span class='item two shadow' data-shadow='box'></span>
-  <span class='item three shadow' data-shadow='box'></span>
-
-</div>
+    <span class='item one shadow' data-shadow='box'></span>
+    <span class='item two shadow' data-shadow='box'></span>
+    <span class='item three shadow' data-shadow='box'></span>
+  </div>
 
   <p>Sed pellentesque adipiscing tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros augue, pharetra ac suscipit et, mattis ut nisi. Ut id convallis lorem. In pharetra tempus ligula sit amet rutrum. Suspendisse facilisis est vel augue sagittis a lacinia nibh posuere.</p>
 
@@ -55,35 +53,7 @@
 
   <a href='mailto:hello@danbender.net' class='shadow' data-shadow='box'>Contact me</a>
 
-  <script type='text/javascript'>
+  <p>Sed pellentesque adipiscing tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros augue, pharetra ac suscipit et, mattis ut nisi. Ut id convallis lorem. In pharetra tempus ligula sit amet rutrum. Suspendisse facilisis est vel augue sagittis a lacinia nibh posuere.</p>
 
-  $(document).ready(function() {
-    var shadow = $('.shadow'),
-    win = $(window);
-
-    function set3D() {
-      var windowHeight = win.height();
-
-      shadow.each(function() {
-        var self = $(this),
-        scrollHeight = win.scrollTop(),
-        elementPosition = self.position(),
-        shadowType = self.data('shadow') + 'Shadow',
-        shadowOffset = (elementPosition.top + self.height() / 2 - scrollHeight) / windowHeight * -100 + 50;
-
-        if (shadowType === 'textShadow') {
-          self.css(shadowType, '0 ' + shadowOffset / 3 + 'px 10px rgba(0,0,0,0.15)');
-        }
-        else {
-          self.css(shadowType, '0 ' + shadowOffset / 3 + 'px 20px -5px rgba(0,0,0,0.15)');
-        };
-      });
-    };
-
-    win.on('load scroll resize', function() {
-      set3D();
-    });
-  })
-  </script>
 </body>
 </html>
