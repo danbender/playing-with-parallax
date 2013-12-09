@@ -1,5 +1,5 @@
-Spiking on Parallax
-===================
+Spiking on Parallax – pt. 1
+===========================
 
 Just `git clone` it.
 
