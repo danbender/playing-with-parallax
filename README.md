@@ -3,6 +3,9 @@ Spiking on Parallax
 
 Just `git clone` it.
 
+View it here: http://danbender.github.io/playing-with-parallax/
+
+
 
 ### index.html
 
