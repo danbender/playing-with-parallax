@@ -3,7 +3,7 @@ Spiking on Parallax
 
 Just `git clone` it.
 
-View it here: http://danbender.github.io/playing-with-parallax/
+View it here: http://danbender.github.io/playing_with_parallax/
 
 
 
